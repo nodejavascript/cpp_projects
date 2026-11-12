@@ -1,0 +1,16 @@
+// Copy this file to config.h and fill in your own values.
+//
+//   cp config.h.example config.h
+//
+// config.h is git-ignored, so the values never leave your machine.
+
+#define WIFI_HOST            "MQTT-OLED-Energy-Monitor"
+#define WIFI_SSID            "wifissid"
+#define WIFI_PASSWORD        "wifipassword"
+
+#define MQTT_SERVER          "mqtthostname"
+#define MQTT_PORT            1883
+#define MQTT_USER            "mqttuser"
+#define MQTT_PASSWORD        "mqttpassword"
+#define MQTT_CLIENT          "MQTT-OLED-Energy-Monitor"
+#define MQTT_TOPIC           "MQTT-OLED-Energy-Monitor/POWER"

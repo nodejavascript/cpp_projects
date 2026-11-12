@@ -1,0 +1,20 @@
+// Copy this file to config.h and fill in your own values.
+//
+//   cp config.h.example config.h
+//
+// config.h is git-ignored, so the values never leave your machine.
+
+// The home network this device joins as a station.
+#define WIFI_SSID       "your-network-name"
+#define WIFI_PASSWORD   "your-network-password"
+
+// The network this device serves itself.
+#define AP_SSID         "esp-access-point"
+#define AP_PASSWORD     "at-least-8-characters"
+
+// Static address on the home network. The gateway is the router.
+#define WIFI_IP         192, 168, 43, 100
+#define WIFI_GATEWAY    192, 168, 43, 1
+#define WIFI_SUBNET     255, 255, 255, 0
+#define WIFI_DNS1       8, 8, 8, 8
+#define WIFI_DNS2       1, 1, 1, 1

@@ -1,0 +1,18 @@
+// Copy this file to config.h and fill in your own values.
+//
+//   cp config.h.example config.h
+//
+// config.h is git-ignored, so the values never leave your machine.
+
+#define WIFI_SSID           "your-network-name"
+#define WIFI_PASSWORD       "your-network-password"
+
+// Where this device reports to. The device POSTs to <url>/arduino.
+#define EXPRESS_SERVER_URL  "https://example.com"
+
+// Shared secret. /authorize will only change EXPRESS_SERVER_URL for a caller
+// that presents this token, so pick something long and random.
+#define AUTH_TOKEN          "change-this-token"
+
+#define STATUS_LED_PIN      33
+#define TIMEZONE_OFFSET     -4      // hours from UTC

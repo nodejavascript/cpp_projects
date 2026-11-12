@@ -1,0 +1,32 @@
+# gitleaks configuration.
+#
+# allowlist: paths and patterns that are legitimately placeholder-shaped. Every
+# entry is narrow on purpose — a broad allowlist is the same as no scanner.
+
+title = "cpp_projects"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Placeholders and the scanner's own pattern definitions"
+paths = [
+  '''tools/scan-secrets\.py$''',
+]
+regexes = [
+  # config.h.example carries placeholders only; these three styles are the ones
+  # actually used across the 16 projects.
+  '''your-network-password''',
+  '''your-access-key''',
+  '''change-this-token''',
+  '''hooks\.slack\.com/services/REPLACE/REPLACE/REPLACE''',
+  '''mqtt-password''',
+  '''mqtt-user''',
+  # Numeric test addresses from the documentation ranges.
+  '''192\.0\.2\.\d+''',
+]
+stopwords = [
+  "example",
+  "placeholder",
+  "your-",
+]

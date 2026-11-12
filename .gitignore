@@ -1,0 +1,39 @@
+# ---------------------------------------------------------------------------
+# Credentials. Every project that needs one reads a git-ignored config.h.
+# Only config.h.example is tracked, and it holds placeholders alone.
+# ---------------------------------------------------------------------------
+config.h
+config*.h
+!config.h.example
+!*.h.example
+.env
+.env.*
+!.env.example
+secrets.h
+credentials.h
+*.pem
+*.p12
+*.pfx
+*.key
+*.jks
+*.keystore
+
+# ---------------------------------------------------------------------------
+# Build output
+# ---------------------------------------------------------------------------
+build/
+*.bin
+*.elf
+*.hex
+*.map
+*.d
+
+# ---------------------------------------------------------------------------
+# Editor and OS noise
+# ---------------------------------------------------------------------------
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+*~
+*.swp

@@ -1,0 +1,16 @@
+// Copy this file to config.h and fill in your own values.
+//
+//   cp config.h.example config.h
+//
+// config.h is git-ignored, so the values never leave your machine.
+
+#define WIFI_SSID       "your-network-name"
+#define WIFI_PASSWORD   "your-network-password"
+
+#define MQTT_HOST       "192.0.2.10"     // broker address
+#define MQTT_PORT       1883
+#define MQTT_USER       "mqtt-user"
+#define MQTT_PASSWORD   "mqtt-password"
+#define MQTT_CLIENT_ID  "bmp280-publisher"
+
+#define SENSOR_NAME     "bmp280_1"       // becomes sensors/bmp280_1/...

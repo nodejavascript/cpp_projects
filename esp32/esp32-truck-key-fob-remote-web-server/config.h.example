@@ -1,0 +1,26 @@
+// Copy this file to config.h and fill in your own values.
+//
+//   cp config.h.example config.h
+//
+// config.h is git-ignored, so the values never leave your machine.
+//
+// Two networks are supported. The flag in the sketch picks which one is used at
+// run time; each has its own static address so a device keeps a predictable IP
+// on either network.
+
+// ---- home network -------------------------------------------------------
+#define WIFI_SSID_HOME       "test-home-network"
+#define WIFI_PASS_HOME       "test-home-password"
+#define WIFI_IP_HOME         192, 168, 43, 112
+#define WIFI_GATEWAY_HOME    192.168.43, 1
+
+// ---- alternate network (phone hotspot, second router) -------------------
+#define WIFI_SSID_ALT        "test-alt-network"
+#define WIFI_PASS_ALT        "test-alt-password"
+#define WIFI_IP_ALT          10, 0, 0, 112
+#define WIFI_GATEWAY_ALT     10.0.0, 1
+
+// ---- shared network settings -------------------------------------------
+#define WIFI_SUBNET          255, 255, 255, 0
+#define WIFI_DNS_PRIMARY     8, 8, 8, 8
+#define WIFI_DNS_SECONDARY   1, 1, 1, 1
